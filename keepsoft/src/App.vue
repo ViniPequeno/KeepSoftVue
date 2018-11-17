@@ -11,4 +11,9 @@ export default {
 </script>
 
 <style>
+#app{
+  font-size: 13pt !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+
+}
 </style>

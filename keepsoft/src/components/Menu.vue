@@ -1,23 +1,23 @@
 <template>
-  <v-app>
-    <v-toolbar style = "background-color: #060606;"
+  <div>
+    <v-toolbar style = "background-color: #3D3D3D;"
       app
       :clipped-left="clipped"
     >
-      <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
       <v-spacer></v-spacer>
-      <v-toolbar-title><img src="/static/img/arris.png" id = "img-logo" alt="KeepSoft"></v-toolbar-title>
+      <v-toolbar-title><img src="/static/logocurto.png" height="50" id = "img-logo" alt="KeepSoft"></v-toolbar-title>
       <v-spacer></v-spacer>
     </v-toolbar>
-    
-    <v-content>
-      <router-view/>
-    </v-content>
-
     <v-footer :fixed="fixed" app>
-      <span>KeepSoft&copy; 2018</span>
-    </v-footer>
-  </v-app>
+          <v-layout
+            column
+            align-center
+            justify-center
+          >
+        <span>KeepSoft&copy; 2018</span>
+          </v-layout>
+      </v-footer>
+  </div>
 </template>
 
 <script>

@@ -1,4 +1,6 @@
 <template>
+  <v-app>
+    <p-menu></p-menu>
   <v-container fluid>
     <v-dialog
       v-model="dialog"
@@ -81,11 +83,16 @@
       </v-flex>
     </v-layout>
   </v-container>
+  </v-app> 
 </template>
 
 <script>
 import axios from "../axios/index";
+import Menu from "../components/Menu";
 export default {
+  components: {
+    PMenu: Menu
+  },
   data() {
     return {
       id: "",
